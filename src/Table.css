@@ -1,0 +1,18 @@
+th {
+  border-top: 1px black solid;
+}
+
+table {
+  background-color: aqua;
+  width: 500px;
+  text-align: center;
+}
+
+table td {
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+}
+
+table tr:hover {
+  background-color: bisque;
+}

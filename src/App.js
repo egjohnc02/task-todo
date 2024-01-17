@@ -34,6 +34,29 @@ class App extends Component {
     const { characters } = this.state;
     var currentDate = new Date();
     var day = currentDate.getDay();
+    switch (day + 1) {
+      case 2:
+        day = "Monday";
+        break;
+      case 3:
+        day = "Tuesday";
+        break;
+      case 4:
+        day = "Wednesday";
+        break;
+      case 5:
+        day = "Thursday";
+        break;
+      case 6:
+        day = "Friday";
+        break;
+      case 7:
+        day = "Saturday";
+        break;
+      default:
+        day = "Sunday";
+        break;
+    }
     return (
       <div className="container">
         <h3>Today is {day}, please done your task</h3>
